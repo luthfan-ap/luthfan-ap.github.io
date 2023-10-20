@@ -4912,6 +4912,7 @@ textarea.form-control-lg {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
+
 }
 @media (min-width: 768px) {
   .list-group-horizontal-md {
@@ -6077,6 +6078,10 @@ textarea.form-control-lg {
     background-clip: padding-box;
     outline: 0;
     transition: transform 0.3s ease-in-out;
+  }
+  
+  .hidden-576px {
+    display: none;
   }
 }
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
