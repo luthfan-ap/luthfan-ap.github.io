@@ -4176,7 +4176,23 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+
+  pointer-events: auto;
+    
+    transform: scale(1);
+    opacity: 1;
+    transition: all 300ms ease-in-out; 
+    
+    display: flex;
+    flex-direction: column;
 }
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
