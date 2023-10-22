@@ -36,6 +36,12 @@ function validate() {
         nama.focus();
         return false;
     }
+        if(!isNaN(nama.value)){
+        alert("Name cannot be a number.");
+        message.placeholder = "Input your message."
+        message.focus();
+        return false;
+    }
     if(email.value == ""){
         alert("Please input your email.");
         email.placeholder = "Input your email."
@@ -48,10 +54,17 @@ function validate() {
         phone.focus();
         return false;
     }
+    if(phone.value < 10){
+        alert("Valid phone number must be more than 10 digits.");
+        phone.placeholder = "Input your phone number."
+        phone.focus();
+        return false;
+    }
     if(message.value == ""){
         alert("Please input a message.");
         message.placeholder = "Input your message."
         message.focus();
         return false;
     }
+    
 }
